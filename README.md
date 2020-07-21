@@ -1,6 +1,20 @@
 # Geometry matching tools
 
 
+## Reference
+
+This code was originally based on the following work: 
+
+> O. van Kaick, G. Hamarneh, H. Zhang, P. Wighton
+"Contour Correspondence via Ant Colony Optimization"
+Proc. 15th Pacific Conference on Computer Graphics and Applications (Pacific Graphics 2007), pp. 271-280, 2007.
+http://dx.doi.org/10.1109/PG.2007.56
+
+Source-code available at:
+
+https://www.mathworks.com/matlabcentral/fileexchange/24094-contour-correspondence-via-ant-colony-optimization
+
+
 
 
 ## MoST Project
