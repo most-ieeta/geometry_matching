@@ -28,7 +28,26 @@ eval calc_and_write_correlations('data/dataset1/image_, 1, 2);
 
 The output of the function execution would contain a file *.corr* file and a *.tsv* (which would be *image_00001_00002.corr* and *image_00001_00002.tsv* for the above sample call).
 
+The *.corr* file contains the coordinates for all the points of the first geometry and the coordinates of the corresponding points in the second geometry. The file contains one point of the first geometry per line and four columns of coordinates (the first two are from the first geometry and last two are from the second geometry) as in the following example.
 
+```
+776 212 775 212
+770 214 773 214
+742 214 745 214
+730 216 731 216
+727 214 727 216
+```
+
+The *.tsv* file contains the point number for all the points of the first geometry and the corresponding point numbers on the second geometry. The file contains one point of the first geometry per line and two columns (the first column is the point number in the first geometry and the second is the number of the matching point in the second geometry) as in the following example.
+
+```
+1 2
+2 3
+3 4
+4 5
+5 6
+6 6
+```
 
 
 ### SPT-DataLab version
