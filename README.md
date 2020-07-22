@@ -20,13 +20,24 @@ Each file the must store geometries coordinates, one pair of X-Y coordinates per
 713 215
 ```
 
-The *calc_and_write_correlations* function requires three parameters: (i) the file name prefix (which may contain the path to the file), (ii) the number of the first file and (iii) the number of the second file. Hence running *eval calc_and_write_correlations('data/dataset1/image_, 1, 2);* in Octave results in the matching between the geometry in the file * data/dataset1/image_00001.png.pof* and the geometry in the file *data/dataset1/image_00002.png.pof*
+The *calc_and_write_correlations* function requires three parameters: (i) the file name prefix (which may contain the path to the file), (ii) the number of the first file and (iii) the number of the second file. Hence running the following code in Octave results in the matching between the geometry in the file *data/dataset1/image_00001.png.pof* and the geometry in the file *data/dataset1/image_00002.png.pof*
+
+```
+eval calc_and_write_correlations('data/dataset1/image_, 1, 2);
+```
+
+The output of the function execution would contain a file *.corr* file and a *.tsv* (which would be *image_00001_00002.corr* and *image_00001_00002.tsv* for the above sample call).
 
 
+
+
+### SPT-DataLab version
+
+The main function is *calc_and_write_sptdatalab*. The overall matching mechanism of this version is the same of the *standalone version*. But this version is configured to do not show graphic outputs and to generate less output files than the *standalone version* in order to achieve higher performance and to be integrated into [SPT-DataLab](https://github.com/most-ieeta/SPT-DataLab) - as described [here](https://github.com/most-ieeta/SPT-DataLab). 
 
 ## Reference
 
-This code was originally based on the following work: 
+This code based on the following work: 
 
 > O. van Kaick, G. Hamarneh, H. Zhang, P. Wighton
 "Contour Correspondence via Ant Colony Optimization"
