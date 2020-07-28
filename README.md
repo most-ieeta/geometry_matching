@@ -52,7 +52,13 @@ The *.tsv* file contains the point number for all the points of the first geomet
 
 ### SPT-DataLab version
 
-The main function is *calc_and_write_sptdatalab*. The overall matching mechanism of this version is the same of the *standalone version*. But this version is configured to do not show graphic outputs and to generate less output files than the *standalone version* in order to achieve higher performance and to be integrated into [SPT-DataLab](https://github.com/most-ieeta/SPT-DataLab) - as described [here](https://github.com/most-ieeta/SPT-DataLab). 
+The main function is *calc_and_write_sptdatalab*. The overall matching mechanism of this version is the same of the *standalone version*. But this version is configured to do not show graphic outputs and to generate less output files than the *standalone version* in order to achieve higher performance and to be integrated into [SPT-DataLab](https://github.com/most-ieeta/SPT-DataLab). 
+
+SPT DataLab uses the MATLAB engine to run *calc_and_write_sptdatalab*. Hence, in order to use SPT Data Lab to call the matching routine you must download and install the MATLAB Engine for Java (https://www.mathworks.com/help/matlab/matlab_external/get-started-with-matlab-engine-api-for-java.html ).
+
+Also, the files for *SPT-DataLab version* should be placed in a folder named *aco* under the default directory, as described in [here](https://github.com/most-ieeta/SPT-DataLab/wiki/SPT-DataLab---Installation-notes#integration-with-external-tools-for-the-preprocessing-pipeline).
+
+
 
 ## Reference
 
